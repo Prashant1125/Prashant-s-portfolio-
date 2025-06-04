@@ -1,51 +1,34 @@
-
 import {
-  logo,
+  logo1,
   backend,
-  creator,
   mobile,
   web,
-  github,
-  menu,
-  close,
-  css,
-  gearXpert,
-  project2,
-  project3,
-  mysql,
-  express,
   aws,
   mui,
-  
-  gsap,
-  framer,
   figma,
   git,
-  html,
+  dart,
+  github,
   javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  threejs,
-  firstTestimonial,
-  secondTestimonial,
-  thirdTestimonial,
+  nestify,
+  donorpulse,
+  school,
+  tasks,
+  pbrs,
+  raj,
+  ravi,
+  rudransh,
+  rablo
+  
 } from '../assets'
 
-
 // Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
-
+import takshshila from "../assets/takshshila.png";
 
 export const navLinks = [
-
-
   {
     id: "about",
     title: "About",
-    
   },
   {
     id: "work",
@@ -55,115 +38,102 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+   {
+    id: "resume",
+    title: "Resume",
+  },
 ];
 
 const services = [
   {
-    title: "Full-Stack Developer",
-    icon: web,
-  },
-  {
-    title: "Frontend Developer",
+    title: "Flutter Developer",
     icon: mobile,
   },
-  {
-    title: "Backend Developer",
-    icon: backend,
+   {
+    title: "Dart",
+    icon: dart,
   },
   {
-    title: "Ui UX Designer",
-    icon: creator,
+    title: "Firebase",
+    icon: aws,
+  },
+  {
+    title: "Github",
+    icon: github,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Flutter",
+    icon: mobile,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Dart",
+    icon: dart,
+  },
+  {
+    name: "Firebase",
+    icon: aws,
+  },
+  {
+    name: "Github",
+    icon: github,
+  },
+  {
+    name: "Git",
+    icon: git,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
-
- 
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Material Ui",
+    name: "Flutter Flow",
     icon: mui,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "VS Code",
+    icon: web,
   },
   {
-    name: "Express Js",
-    icon: express,
+    name: "Android Studio",
+    icon: logo1,
   },
   {
-    name: "AWS",
-    icon: aws,
+    name: "Postman",
+    icon: backend, 
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySql",
-    icon: mysql,
-  },
-
-  {
-    name: "git",
-    icon: git,
-  },
- 
-
 ];
+
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
+    title: "Flutter Developer",
+    company_name: "Student / Personal Projects",
+    icon: takshshila, // You can replace this with your own logo if you have one
     iconBg: "#383E56",
-    date: "Jan 2023 - present",
+    date: "2021 - 2025",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed multiple Flutter applications with Firebase backend for real-time data.",
+      "Built scalable user interfaces and maintained code quality with best practices.",
+"Completed B.Tech in Computer Science from Takshshila Institute of Engineering & Technology, Jabalpur, securing a CGPA of 8.05."    ],
+  },
+  {
+    title: "Flutter Developer Intern",
+    company_name: "Rablo Software Limited",
+    icon: rablo, 
+    iconBg: "#383E56",
+    date: "Dec 2024 - Feb 2025",
+    points: [
+      "Developed responsive and visually appealing mobile interfaces using Flutter and Dart.",
+      "Implemented state management using GetX to efficiently manage UI state and business logic.",
+      "Collaborated using Git and GitHub for version control and project sharing.",
+      "Gained hands-on experience in publishing debug APKs and testing on real Android devices.",
     ],
   },
 ];
@@ -171,102 +141,127 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    name: "MD Mustaqeem",
-    designation: "Ecommerce",
-    company: "QuickMart",
-    image: firstTestimonial,
+      "Prashant is a dedicated developer who delivered a great Flutter app for our project.",
+    name: "Rajkumar Patel",
+    designation: "Senior Flutter Dev",
+    company: "Impetrosys",
+    image: raj,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Huzaif does.",
-    name: "Abdul Raheman",
-    designation: "Ecommerce Business",
-    company: "justbuyz",
-    image: secondTestimonial,
+      "His work ethic and skills helped us launch our app on time with excellent quality.",
+    name: "Ravi Kumar",
+    designation: "Flutter Developer",
+    company: "Rablo Software Limited",
+    image: ravi,
   },
   {
     testimonial:
-      "After Huzaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "James Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: thirdTestimonial,
+      "Highly recommend Prashant for any Flutter development needs.",
+    name: "Rudransh Pandey",
+    designation: "Flutter Developer",
+    company: "Rablo Software Limited",
+    image: rudransh,
   },
 ];
 
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "Nestify",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
+      "Nestify is a room rental Flutter app with features like user authentication, room listing, and real-time chat.",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "white-text-gradient",
+        name: "firebase",
+        color: "yellow-text-gradient",
       },
       {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
- 
-    ],
-    image: project2,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "GearXpert",
-    description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "emailJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Gsap",
+        name: "api",
         color: "pink-text-gradient",
       },
     ],
-    image: gearXpert,
-    source_code_link: "https://github.com/",
+    image: nestify,
+    source_code_link: "https://github.com/Prashant1125/Nestify",
   },
   {
-    name: "GoGroove-Ecommerce",
+    name: "Donor Pulse",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+      "Blood donation app built in Flutter that helps users find nearby donors and organize donation drives.",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
+        name: "firebase",
         color: "green-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
+       {
+        name: "getx",
+        color: "pink-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/",
+    image: donorpulse, 
+    source_code_link: "https://github.com/Prashant1125/Rakt_daan.git",
+  },
+  {
+    name: "School Management",
+    description:
+      "A Flutter-based school management system with attendance, homework, announcements, and calendar features.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "local storage",
+        color: "yellow-text-gradient",
+      },
+       {
+        name: "getx",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: school,
+    source_code_link: "https://github.com/Prashant1125/Student-Management.git",
+  },
+  {
+    name: "Task Manager",
+    description:
+      "Task Manager app for organizing and managing daily tasks with notifications and reminders.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tasks,
+    source_code_link: "https://github.com/Prashant1125/Tasks.git",
+  },
+  {
+    name: "PBRS",
+    description:
+      "A project management and booking system developed with Flutter and Firebase.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Apis",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: pbrs, 
+    source_code_link: "https://github.com/Rajkumar07793/pbrs_mart.git",
   },
 ];
 

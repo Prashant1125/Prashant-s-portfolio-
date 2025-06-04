@@ -72,9 +72,9 @@ const About = () => {
       </div>
 
       <p ref={paragraphRef} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I'm a skilled software developer with experience in  JavaScript, and expertise in frameworks 
-        like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, 
-        scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+        I'm a skilled Flutter developer with expertise in Dart, Flutter framework, and Firebase. I’m a quick learner who 
+        works closely with clients to build beautiful, efficient, and scalable mobile apps. My focus is on creating user-
+        friendly solutions that solve real-world problems. Let’s collaborate and bring your app ideas to life!
       </p>
 
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">

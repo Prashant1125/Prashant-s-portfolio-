@@ -12,24 +12,19 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Replace with your actual resume URL
+  const resumeLink = "https://drive.google.com/file/d/1l8afgxSJ35Z8h-h7bQgunuFwh6mGNW43/view?usp=sharing";
+
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -44,11 +39,12 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Huzaif &nbsp;
-            <span className='sm:block hidden'> | Devxora</span>
+            Prashant Kushwaha&nbsp;
+            <span className='sm:block hidden'> | Flutter Developer</span>
           </p>
         </Link>
 
+        {/* Desktop Menu */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
@@ -56,13 +52,29 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.id === "resume" ? (
+                <a
+                  href={resumeLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => setActive(nav.title)}
+                >
+                  {nav.title}
+                </a>
+              ) : (
+                <a
+                  href={`#${nav.id}`}
+                  onClick={() => setActive(nav.title)}
+                >
+                  {nav.title}
+                </a>
+              )}
             </li>
           ))}
         </ul>
 
+        {/* Mobile Menu */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -83,12 +95,30 @@ const Navbar = () => {
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id === "resume" ? (
+                    <a
+                      href={resumeLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      onClick={() => {
+                        setActive(nav.title);
+                        setToggle(false);
+                      }}
+                    >
+                      {nav.title}
+                    </a>
+                  ) : (
+                    <a
+                      href={`#${nav.id}`}
+                      onClick={() => {
+                        setActive(nav.title);
+                        setToggle(false);
+                      }}
+                    >
+                      {nav.title}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
